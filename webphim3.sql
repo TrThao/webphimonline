@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 31, 2024 lúc 08:29 AM
+-- Thời gian đã tạo: Th2 29, 2024 lúc 09:58 AM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `webphim`
+-- Cơ sở dữ liệu: `webphim3`
 --
 
 -- --------------------------------------------------------
@@ -127,7 +127,20 @@ INSERT INTO `episodes` (`id`, `episode`, `linkphim`, `movie_id`, `server`, `crea
 (71, 7, '<iframe width=\"560\" height=\"315\" src=\"https://1080.opstream4.com/share/708748bbc20fcc6211b94ccd0592b4bf\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 19, 4, '2024-01-25 11:24:26', '2024-01-25 11:24:26'),
 (72, 8, '<iframe width=\"560\" height=\"315\" src=\"https://1080.opstream4.com/share/222ac746d4f76b4741704d9c615dd2b6\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 19, 4, '2024-01-25 11:24:40', '2024-01-25 11:24:40'),
 (73, 1, '<iframe width=\"560\" height=\"315\" src=\"https://hdbo.opstream5.com/share/405075699f065e43581f27d67bb68478\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 36, 4, '2024-01-25 15:52:58', '2024-01-25 15:52:58'),
-(74, 1, '<iframe width=\"560\" height=\"315\" src=\"https://hd1080.opstream2.com/share/0180e9a354eccc55463ae4c11abfc5f4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 37, 4, '2024-01-25 16:00:26', '2024-01-25 16:00:26');
+(74, 1, '<iframe width=\"560\" height=\"315\" src=\"https://hd1080.opstream2.com/share/0180e9a354eccc55463ae4c11abfc5f4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>', 37, 4, '2024-01-25 16:00:26', '2024-01-25 16:00:26'),
+(75, 1, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/cd92cbe966fd3498c1adc65f44aa3656\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 48, 4, '2024-02-19 16:15:16', '2024-02-19 16:15:16'),
+(76, 2, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/1ccf6de7b9017b941e3fa12d17c66c88\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 48, 4, '2024-02-19 16:15:16', '2024-02-19 16:15:16'),
+(77, 3, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/c96ce78d7e218fd59cecd94401be30ba\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 48, 4, '2024-02-19 16:15:16', '2024-02-19 16:15:16'),
+(78, 4, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/27d332089c22e8f8578ec62a8e31dd2d\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 48, 4, '2024-02-19 16:15:16', '2024-02-19 16:15:16'),
+(79, 5, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream17.com/share/cfbce4c1d7c425baf21d6b6f2babe6be\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 48, 4, '2024-02-19 16:15:16', '2024-02-19 16:15:16'),
+(80, 1, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream16.com/share/cd882c767c8c59acb413a971a5b442f7\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 49, 4, '2024-02-29 15:50:26', '2024-02-29 15:50:26'),
+(81, 2, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream16.com/share/83736f851256ebfd392d677baefc775d\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 49, 4, '2024-02-29 15:50:26', '2024-02-29 15:50:26'),
+(82, 3, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/0ac8c1ec28ea5dbd46b0795eb7db51b5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 49, 4, '2024-02-29 15:50:26', '2024-02-29 15:50:26'),
+(83, 4, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/2ba46450ca83f7d0d90f555479c657a2\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 49, 4, '2024-02-29 15:50:26', '2024-02-29 15:50:26'),
+(84, 5, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/ee13e0e56049f9ca95ca2457872fa701\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 49, 4, '2024-02-29 15:50:26', '2024-02-29 15:50:26'),
+(85, 6, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/2db16138baffc8ed8901f0ddeac2c91d\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 49, 4, '2024-02-29 15:50:26', '2024-02-29 15:50:26'),
+(86, 7, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/e814eed1c6987f78f4e5aebc9f053d52\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 49, 4, '2024-02-29 15:50:26', '2024-02-29 15:50:26'),
+(87, 8, '<iframe width=\"560\" height=\"315\" src=\"https://vip.opstream11.com/share/b57a9c513abb3bff097f080b51e2f754\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen>  </iframe>', 49, 4, '2024-02-29 15:50:26', '2024-02-29 15:50:26');
 
 -- --------------------------------------------------------
 
@@ -193,7 +206,7 @@ CREATE TABLE `info` (
 --
 
 INSERT INTO `info` (`id`, `title`, `description`, `logo`, `copyright`) VALUES
-(1, 'Phim Hay | Phim Mới | Phim VietSub | Phim Online', 'Chào mừng bạn đến với trang web xem phim 2024 - nơi hội tụ hàng ngàn bộ phim đa dạng từ các thể loại khác nhau. Trải nghiệm tuyệt vời với chất lượng hình ảnh sắc nét và âm thanh sống động. Đặc biệt, giao diện đơn giản và dễ sử dụng giúp bạn dễ dàng tìm kiếm và khám phá những tác phẩm điện ảnh độc đáo. Hãy cùng chúng tôi khám phá thế giới của nghệ thuật điện ảnh ngay tại đây!', 'logo7655.png', '© 2024. Mọi quyền được bảo lưu. Khám phá thế giới phim ảnh tại trang web chúng tôi - Nơi kết nối đam mê và nghệ thuật điện ảnh.');
+(1, 'Phim Hay | Phim Mới | Phim VietSub | Phim Online', 'Chào mừng bạn đến với trang web xem phim 2024 - nơi hội tụ hàng ngàn bộ phim đa dạng từ các thể loại khác nhau. Trải nghiệm tuyệt vời với chất lượng hình ảnh sắc nét và âm thanh sống động. Đặc biệt, giao diện đơn giản và dễ sử dụng giúp bạn dễ dàng tìm kiếm và khám phá những tác phẩm điện ảnh độc đáo. Hãy cùng chúng tôi khám phá thế giới của nghệ thuật điện ảnh ngay tại đây!', 'phimmoi8665.png', '© 2024. Mọi quyền được bảo lưu. Khám phá thế giới phim ảnh tại trang web chúng tôi - Nơi kết nối đam mê và nghệ thuật điện ảnh.');
 
 -- --------------------------------------------------------
 
@@ -213,8 +226,7 @@ CREATE TABLE `linkmovie` (
 --
 
 INSERT INTO `linkmovie` (`id`, `title`, `description`, `status`) VALUES
-(4, 'Server Ophim', 'Xem tại server Ophim', 1),
-(6, 'Server Okru', 'Xem phim tại server Okru', 1);
+(4, 'Server Ophim', 'Xem tại server Ophim', 1);
 
 -- --------------------------------------------------------
 
@@ -268,7 +280,7 @@ CREATE TABLE `movies` (
   `topview` int(11) DEFAULT NULL,
   `season` int(11) DEFAULT 0,
   `trailer` varchar(255) DEFAULT NULL,
-  `sotap` int(11) NOT NULL DEFAULT 1,
+  `sotap` varchar(1111) NOT NULL,
   `count_view` int(11) DEFAULT NULL,
   `position` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -278,16 +290,18 @@ CREATE TABLE `movies` (
 --
 
 INSERT INTO `movies` (`id`, `title`, `description`, `status`, `slug`, `category_id`, `thuocphim`, `country_id`, `genre_id`, `image`, `phim_hot`, `resolution`, `name_eng`, `phude`, `ngaytao`, `ngaycapnhat`, `year`, `thoiluong`, `tags`, `topview`, `season`, `trailer`, `sotap`, `count_view`, `position`) VALUES
-(19, 'Samurai Mắt Xanh', 'Samurai Mắt Xanh – Blue Eye Samurai (2023) khát khao trả thù những kẻ đã khiến cô bị ruồng bỏ ở Nhật Bản thời Edo, nữ chiến binh trẻ nọ dấn thân vào con đường đẫm máu dẫn tới số mệnh của mình.', 1, 'samurai-mat-xanh', 3, 'phimle', 3, 4, 'Samurai-mat-xanh2177.jpg', 0, 4, 'Blue Eyed Samurai', 0, '2023-11-15 15:06:14', '2024-01-25 11:18:53', '2018', '50 phút/ Tập', 'Phimmoi.Tv, PhimLau.Hd, PhimChill.TV', 0, 5, 'nJ1yQn17lbE', 8, 13, 10),
-(25, 'Conan Movie 26: Tàu Ngầm Sắt Màu Đen', 'Conan Movie 26: Tàu Ngầm Sắt Màu Đen – Detective Conan Movie 26 (2023) địa điểm lần này được đặt ở vùng biển gần đảo Hachijo-jima, Tokyo. Các kỹ sư từ khắp nơi trên thế giới đã tập hợp để vận hành toàn diện “Phao Thái Bình Dương”, một cơ sở ngoài khơi để kết nối các camera an ninh thuộc sở hữu của lực lượng cảnh sát trên toàn thế giới.\r\n\r\nMột thử nghiệm về một “công nghệ mới” nhất định dựa trên hệ thống nhận dạng khuôn mặt đang được tiến hành ở đó. Trong khi đó, Conan và Đội thám tử nhí đến thăm Hachijo-jima theo lời mời của Sonoko và nhận được một cuộc điện thoại từ Subaru Okiya thông báo rằng một nhân viên Europol đã bị sát hại ở Đức bởi Jin của Tổ chức Áo đen. Conan lo lắng, lẻn vào cơ sở và phát hiện ra rằng một nữ kỹ sư đã bị Tổ chức Áo đen bắt cóc…! Hơn nữa, một ổ USB chứa một số thông tin nhất định mà cô ấy sở hữu lại lọt vào tay tổ chức… Một bóng đen cũng len lỏi vào Ai Haibara..', 1, 'conan-movie-26-tau-ngam-sat-mau-den', 3, 'phimle', 3, 4, 'Conan-Movie-2688.jpg', 1, 0, 'Conan Movie 26: Black Iron Submarine', 0, '2023-11-26 20:18:55', '2024-01-24 16:03:36', '2023', '110 phút', 'Conan Movie 26: Tàu Ngầm Sắt Màu Đen – Detective Conan Movie 26 (2023) địa điểm lần này được đặt ở vùng biển gần đảo Hachijo-jima, Tokyo. Các kỹ sư từ khắp nơi trên thế giới đã tập hợp để vận hành toàn diện “Phao Thái Bình Dương”, một cơ sở ngoài khơi để kết nối các camera an ninh thuộc sở hữu của lực lượng cảnh sát trên toàn thế giới.', 0, 0, 'FXgdEb4kPR4', 1, 1423, 0),
-(29, 'NGƯỜI NHỆN: KHÔNG CÒN NHÀ', 'Bộ phim tiếp nối sự kiện của phần Spider-man: Far From Home khi phản diện Mysterio đã tiết lộ danh tính thực sự của người nhện là Peter Parker, Spiderman đã phải đối diện với nhiều lời khen chê trái chiều đến từ công chúng, việc này không những làm ảnh hưởng đến cuộc sống của Peter mà còn khiến Dì May, cậu bạn Ned và người yêu MJ bị liên lụy. Vì vậy Peter đã tìm đến Doctor Strange để nhờ ông tìm cách giải quyết chuyện này. Tuy nhiên trong quá trình thi triển thuật đảo ngược thời gian, do nhanh mồm nhanh miệng mà Peter đã khiến việc đọc phép gặp lỗi và mở ra những cánh cửa đưa các tên ác nhân ở các vũ trụ khác đến nơi cậu sinh sống. Liệu rằng Peter có thể sửa chữa được lỗi lầm của mình và điều gì đang chờ đợi cậu ở phía trước? Phim bám sát thuyết đa vũ trụ, cho phép tồn tại các chiều không gian song song. Mang đến trải nghiệm tuyệt vời cho khán giả khi thấy những nhân vật mình yêu thích xuất hiện, từ chính diện cho tới phản diện.', 1, 'nguoi-nhen-khong-con-nha', 2, 'phimle', 5, 1, 'nguoi-nhen-khong-con-nha-thumb7419.avif', 1, 0, 'Spider-Man: No Way Home', 0, '2024-01-23 14:14:36', '2024-01-24 16:03:28', '2021', '140 phút', 'Hành Động, Viễn Tưởng, Phiêu Lưu, Bí ẩn', NULL, 0, 'JfVOs4VSpmA', 1, 42439, 2),
-(30, 'ÁC QUỶ MA SƠ: CHUYỆN CHƯA KỂ', 'Ác Quỷ Ma Sơ: Chuyện Chưa Kể - The Convent (2018):Chuyện phim xảy ra vào đầu thế kỷ 17, Persephone – một cô gái trẻ bị buộc tội sai và phải chịu giam cầm trong tòa lâu đài bí ẩn, đã được sơ Reverend cứu giúp đưa về tu viện. Nhưng khi đến nơi cô phát hiện ra đó không phải là một sự cứu rỗi mà là sự ám ảnh kinh hoàng', 1, 'ac-quy-ma-so-chuyen-chua-ke', 2, 'phimle', 9, 2, 'ac-quy-ma-so-chuyen-chua-ke-thumb4017.avif', 0, 0, 'The Convent', 0, '2024-01-23 14:27:44', '2024-01-24 16:47:29', '2019', 'N/A', 'Michael Ironside, Rosie Day, Hannah Arterton', NULL, 0, NULL, 1, 40358, 1),
-(31, 'TẾT Ở LÀNG ĐỊA NGỤC', 'Các hậu duệ của một băng cướp khét tiếng điều tra hàng loạt án mạng tàn bạo ở làng của họ. Liệu đây là nghiệp chướng hay \"tác phẩm\" của kẻ báo thù?', 1, 'tet-o-lang-dia-nguc', 3, 'phimbo', 1, 2, 'Phim-tet-o-lang-dia-nguc9513.jpg', 1, 0, 'Hellbound Village', 0, '2024-01-23 14:38:23', '2024-01-24 16:02:38', '2023', '45 phút/ Tập', 'Quang Tuấn, Phú Đôn, Võ Tấn Phát, Nguyên Thảo, Vân Báu, Huỳnh Như Đan, Ngô Hải Na, Hạnh Thúy, Đình Khang, Ngọc Thư, Lan Phương', NULL, 0, 'C2V38ghWHlQ', 12, 90057, 11),
-(33, 'Nữ Khổng Lồ Xanh (Phần 1)', 'Jennifer Walters điều hướng cuộc sống phức tạp của một luật sư 30 tuổi độc thân, đồng thời cũng là một Hulk siêu mạnh 6 feet 7 inch màu xanh lá cây.', 1, 'nu-khong-lo-xanh-phan-1', 3, 'phimbo', 5, 7, '62fe542f61f8e1074.jpg', 0, 0, 'She-Hulk: Attorney at Law (Season 1)', 0, '2024-01-23 15:22:45', '2024-01-25 11:04:04', '2023', '30 phút/ tập', 'Phim Bộ, Phim Bộ Mỹ, Phim Hài Hước, Phim Hành Động, Phim Viễn Tưởng', NULL, 0, NULL, 9, 15250, 9),
-(34, 'PERCY JACKSON VÀ CÁC VỊ THẦN TRÊN ĐỈNH OLYMPUS', 'Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus\' master bolt and stop an all-out war. With the help of his quest mates Annabeth and Grover, Percy\'s journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and find out who he\'s destined to be.', 1, 'percy-jackson-va-cac-vi-than-tren-dinh-olympus', 3, 'phimbo', 5, 6, 'percy-jackson-va-cac-vi-than-tren-dinh-olympus-thumb3762.avif', 1, 0, 'Percy Jackson and the Olympians', 0, '2024-01-25 11:08:43', '2024-01-25 11:17:47', '2022', '50 phút/tập', 'Walker Scobell, Leah Sava Jeffries, Aryan Simhadri, Virginia Kull, Glynn Turman, Timm Sharp, Megan Mullally, Jason Mantzoukas, Adam Copeland, Jessica Parker Kennedy', NULL, 0, NULL, 8, 22425, NULL),
-(35, 'ĐỆ TỬ THIẾU LÂM TAM THẬP LỤC PHÒNG', 'Monk San Te tries to support and protect Shaolin and her Fang Shih-yu who purposely attacks corrupt Ching officials.', 1, 'de-tu-thieu-lam-tam-thap-luc-phong', 2, 'phimle', 4, 9, 'de-tu-thieu-lam-tam-thap-luc-phong-thumb8633.avif', 0, 0, 'Đệ Tử Thiếu Lâm Tam Thập Lục Phòng', 0, '2024-01-25 11:16:01', '2024-01-25 11:17:33', '2000', '1h 33m', 'Hsiao Ho, Gordon Liu Chia-hui, Lily Li,', NULL, 0, NULL, 1, 37293, NULL),
-(36, 'MÙA HÈ YÊU DẤU CỦA CHÚNG TA', 'Nhiều năm sau khi quay một bộ phim tài liệu đình đám ở trường cấp ba, hai người yêu cũ hay cãi vã nay bị kéo đến trước ống kính cùng nhau – và lại vướng vào nhau.', 1, 'mua-he-yeu-dau-cua-chung-ta', 3, 'phimbo', 2, 7, 'mua-he-yeu-dau-cua-chung-ta-thumb2887.avif', 0, 0, 'Our Beloved Summer', 0, '2024-01-25 15:47:21', '2024-01-25 15:48:11', '2024', '1g 2phút/tập', 'Choi Woo Shik, Kim Da Mi, Kim Sung Cheol, Roh Jeong Eui, Park Jin Joo, Jo Bok Rae, Ahn Dong Gu, Jeon Hye Weon, Park Weon Sang, Seo Jeong Yeon, Cha Mi Kyeong, Heo Joon Seok, Lee Seung Woo, Park Yeon Woo, Park Mi Hyun, Lee Sun Hee, Yun Sang Jeong, Park Do Wook, Jung Gang Hee, Cha Seung Yeup, Ahn Su Bin', NULL, 0, NULL, 12, 4467, NULL),
-(37, 'Ma Sơ Trục Quỷ', 'Ma Sơ Trục Quỷ – La Exorcista (2023) Ofelia là một nữ tu trẻ vừa đặt chân đến thị trấn San Ramon đã bị ép phải thực hiện buổi lễ trừ tà cho một phụ nữ đang mang thai. Tưởng chừng buổi trục quỷ đã hoàn tất, Ofelia bàng hoàng nhận ra hiện thân quỷ dữ chưa từng biến mất.', 1, 'ma-so-truc-quy', 2, 'phimle', 5, 2, 'ma-so-truc-quy3108.jpg', 0, 0, 'Demon Axis Demon', 0, '2024-01-25 15:58:57', '2024-01-25 15:59:13', '2023', '101 phút', 'Ma Sơ Trục Quỷ – La Exorcista (2023) Ofelia là một nữ tu trẻ vừa đặt chân đến thị trấn San Ramon đã bị ép phải thực hiện buổi lễ trừ tà cho một phụ nữ đang mang thai. Tưởng chừng buổi trục quỷ đã hoàn tất, Ofelia bàng hoàng nhận ra hiện thân quỷ dữ chưa từng biến mất.', NULL, 0, NULL, 1, 40405, NULL);
+(19, 'Samurai Mắt Xanh', 'Samurai Mắt Xanh – Blue Eye Samurai (2023) khát khao trả thù những kẻ đã khiến cô bị ruồng bỏ ở Nhật Bản thời Edo, nữ chiến binh trẻ nọ dấn thân vào con đường đẫm máu dẫn tới số mệnh của mình.', 1, 'samurai-mat-xanh', 3, 'phimle', 3, 4, 'Samurai-mat-xanh2177.jpg', 0, 4, 'Blue Eyed Samurai', 0, '2023-11-15 15:06:14', '2024-01-25 11:18:53', '2018', '50 phút/ Tập', 'Phimmoi.Tv, PhimLau.Hd, PhimChill.TV', 0, 5, 'nJ1yQn17lbE', '8', 14, 10),
+(25, 'Conan Movie 26: Tàu Ngầm Sắt Màu Đen', 'Conan Movie 26: Tàu Ngầm Sắt Màu Đen – Detective Conan Movie 26 (2023) địa điểm lần này được đặt ở vùng biển gần đảo Hachijo-jima, Tokyo. Các kỹ sư từ khắp nơi trên thế giới đã tập hợp để vận hành toàn diện “Phao Thái Bình Dương”, một cơ sở ngoài khơi để kết nối các camera an ninh thuộc sở hữu của lực lượng cảnh sát trên toàn thế giới.\r\n\r\nMột thử nghiệm về một “công nghệ mới” nhất định dựa trên hệ thống nhận dạng khuôn mặt đang được tiến hành ở đó. Trong khi đó, Conan và Đội thám tử nhí đến thăm Hachijo-jima theo lời mời của Sonoko và nhận được một cuộc điện thoại từ Subaru Okiya thông báo rằng một nhân viên Europol đã bị sát hại ở Đức bởi Jin của Tổ chức Áo đen. Conan lo lắng, lẻn vào cơ sở và phát hiện ra rằng một nữ kỹ sư đã bị Tổ chức Áo đen bắt cóc…! Hơn nữa, một ổ USB chứa một số thông tin nhất định mà cô ấy sở hữu lại lọt vào tay tổ chức… Một bóng đen cũng len lỏi vào Ai Haibara..', 1, 'conan-movie-26-tau-ngam-sat-mau-den', 3, 'phimle', 3, 4, 'Conan-Movie-2688.jpg', 1, 0, 'Conan Movie 26: Black Iron Submarine', 0, '2023-11-26 20:18:55', '2024-01-24 16:03:36', '2023', '110 phút', 'Conan Movie 26: Tàu Ngầm Sắt Màu Đen – Detective Conan Movie 26 (2023) địa điểm lần này được đặt ở vùng biển gần đảo Hachijo-jima, Tokyo. Các kỹ sư từ khắp nơi trên thế giới đã tập hợp để vận hành toàn diện “Phao Thái Bình Dương”, một cơ sở ngoài khơi để kết nối các camera an ninh thuộc sở hữu của lực lượng cảnh sát trên toàn thế giới.', 0, 0, 'FXgdEb4kPR4', '1', 1423, 0),
+(29, 'NGƯỜI NHỆN: KHÔNG CÒN NHÀ', 'Bộ phim tiếp nối sự kiện của phần Spider-man: Far From Home khi phản diện Mysterio đã tiết lộ danh tính thực sự của người nhện là Peter Parker, Spiderman đã phải đối diện với nhiều lời khen chê trái chiều đến từ công chúng, việc này không những làm ảnh hưởng đến cuộc sống của Peter mà còn khiến Dì May, cậu bạn Ned và người yêu MJ bị liên lụy. Vì vậy Peter đã tìm đến Doctor Strange để nhờ ông tìm cách giải quyết chuyện này. Tuy nhiên trong quá trình thi triển thuật đảo ngược thời gian, do nhanh mồm nhanh miệng mà Peter đã khiến việc đọc phép gặp lỗi và mở ra những cánh cửa đưa các tên ác nhân ở các vũ trụ khác đến nơi cậu sinh sống. Liệu rằng Peter có thể sửa chữa được lỗi lầm của mình và điều gì đang chờ đợi cậu ở phía trước? Phim bám sát thuyết đa vũ trụ, cho phép tồn tại các chiều không gian song song. Mang đến trải nghiệm tuyệt vời cho khán giả khi thấy những nhân vật mình yêu thích xuất hiện, từ chính diện cho tới phản diện.', 1, 'nguoi-nhen-khong-con-nha', 2, 'phimle', 5, 1, 'nguoi-nhen-khong-con-nha-thumb7419.avif', 1, 0, 'Spider-Man: No Way Home', 0, '2024-01-23 14:14:36', '2024-01-24 16:03:28', '2021', '140 phút', 'Hành Động, Viễn Tưởng, Phiêu Lưu, Bí ẩn', NULL, 0, 'JfVOs4VSpmA', '1', 42441, 2),
+(30, 'ÁC QUỶ MA SƠ: CHUYỆN CHƯA KỂ', 'Ác Quỷ Ma Sơ: Chuyện Chưa Kể - The Convent (2018):Chuyện phim xảy ra vào đầu thế kỷ 17, Persephone – một cô gái trẻ bị buộc tội sai và phải chịu giam cầm trong tòa lâu đài bí ẩn, đã được sơ Reverend cứu giúp đưa về tu viện. Nhưng khi đến nơi cô phát hiện ra đó không phải là một sự cứu rỗi mà là sự ám ảnh kinh hoàng', 1, 'ac-quy-ma-so-chuyen-chua-ke', 2, 'phimle', 9, 2, 'ac-quy-ma-so-chuyen-chua-ke-thumb4017.avif', 0, 0, 'The Convent', 0, '2024-01-23 14:27:44', '2024-01-24 16:47:29', '2019', 'N/A', 'Michael Ironside, Rosie Day, Hannah Arterton', NULL, 0, NULL, '1', 40358, 1),
+(31, 'TẾT Ở LÀNG ĐỊA NGỤC', 'Các hậu duệ của một băng cướp khét tiếng điều tra hàng loạt án mạng tàn bạo ở làng của họ. Liệu đây là nghiệp chướng hay \"tác phẩm\" của kẻ báo thù?', 1, 'tet-o-lang-dia-nguc', 3, 'phimbo', 1, 2, 'Phim-tet-o-lang-dia-nguc9513.jpg', 1, 0, 'Hellbound Village', 0, '2024-01-23 14:38:23', '2024-01-24 16:02:38', '2023', '45 phút/ Tập', 'Quang Tuấn, Phú Đôn, Võ Tấn Phát, Nguyên Thảo, Vân Báu, Huỳnh Như Đan, Ngô Hải Na, Hạnh Thúy, Đình Khang, Ngọc Thư, Lan Phương', NULL, 0, 'C2V38ghWHlQ', '12', 90057, 11),
+(33, 'Nữ Khổng Lồ Xanh (Phần 1)', 'Jennifer Walters điều hướng cuộc sống phức tạp của một luật sư 30 tuổi độc thân, đồng thời cũng là một Hulk siêu mạnh 6 feet 7 inch màu xanh lá cây.', 1, 'nu-khong-lo-xanh-phan-1', 3, 'phimbo', 5, 7, '62fe542f61f8e1074.jpg', 0, 0, 'She-Hulk: Attorney at Law (Season 1)', 0, '2024-01-23 15:22:45', '2024-01-25 11:04:04', '2023', '30 phút/ tập', 'Phim Bộ, Phim Bộ Mỹ, Phim Hài Hước, Phim Hành Động, Phim Viễn Tưởng', NULL, 0, NULL, '9', 15250, 9),
+(34, 'PERCY JACKSON VÀ CÁC VỊ THẦN TRÊN ĐỈNH OLYMPUS', 'Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus\' master bolt and stop an all-out war. With the help of his quest mates Annabeth and Grover, Percy\'s journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and find out who he\'s destined to be.', 1, 'percy-jackson-va-cac-vi-than-tren-dinh-olympus', 3, 'phimbo', 5, 6, 'percy-jackson-va-cac-vi-than-tren-dinh-olympus-thumb3762.avif', 1, 0, 'Percy Jackson and the Olympians', 0, '2024-01-25 11:08:43', '2024-01-25 11:17:47', '2022', '50 phút/tập', 'Walker Scobell, Leah Sava Jeffries, Aryan Simhadri, Virginia Kull, Glynn Turman, Timm Sharp, Megan Mullally, Jason Mantzoukas, Adam Copeland, Jessica Parker Kennedy', NULL, 0, NULL, '8', 22425, NULL),
+(35, 'ĐỆ TỬ THIẾU LÂM TAM THẬP LỤC PHÒNG', 'Monk San Te tries to support and protect Shaolin and her Fang Shih-yu who purposely attacks corrupt Ching officials.', 1, 'de-tu-thieu-lam-tam-thap-luc-phong', 2, 'phimle', 4, 9, 'de-tu-thieu-lam-tam-thap-luc-phong-thumb8633.avif', 0, 0, 'Đệ Tử Thiếu Lâm Tam Thập Lục Phòng', 0, '2024-01-25 11:16:01', '2024-01-25 11:17:33', '2000', '1h 33m', 'Hsiao Ho, Gordon Liu Chia-hui, Lily Li,', NULL, 0, NULL, '1', 37294, NULL),
+(36, 'MÙA HÈ YÊU DẤU CỦA CHÚNG TA', 'Nhiều năm sau khi quay một bộ phim tài liệu đình đám ở trường cấp ba, hai người yêu cũ hay cãi vã nay bị kéo đến trước ống kính cùng nhau – và lại vướng vào nhau.', 1, 'mua-he-yeu-dau-cua-chung-ta', 3, 'phimbo', 2, 7, 'mua-he-yeu-dau-cua-chung-ta-thumb2887.avif', 0, 0, 'Our Beloved Summer', 0, '2024-01-25 15:47:21', '2024-01-25 15:48:11', '2024', '1g 2phút/tập', 'Choi Woo Shik, Kim Da Mi, Kim Sung Cheol, Roh Jeong Eui, Park Jin Joo, Jo Bok Rae, Ahn Dong Gu, Jeon Hye Weon, Park Weon Sang, Seo Jeong Yeon, Cha Mi Kyeong, Heo Joon Seok, Lee Seung Woo, Park Yeon Woo, Park Mi Hyun, Lee Sun Hee, Yun Sang Jeong, Park Do Wook, Jung Gang Hee, Cha Seung Yeup, Ahn Su Bin', NULL, 0, NULL, '12', 4468, NULL),
+(37, 'Ma Sơ Trục Quỷ', 'Ma Sơ Trục Quỷ – La Exorcista (2023) Ofelia là một nữ tu trẻ vừa đặt chân đến thị trấn San Ramon đã bị ép phải thực hiện buổi lễ trừ tà cho một phụ nữ đang mang thai. Tưởng chừng buổi trục quỷ đã hoàn tất, Ofelia bàng hoàng nhận ra hiện thân quỷ dữ chưa từng biến mất.', 1, 'ma-so-truc-quy', 2, 'phimle', 5, 2, 'ma-so-truc-quy3108.jpg', 0, 0, 'Demon Axis Demon', 0, '2024-01-25 15:58:57', '2024-01-25 15:59:13', '2023', '101 phút', 'Ma Sơ Trục Quỷ – La Exorcista (2023) Ofelia là một nữ tu trẻ vừa đặt chân đến thị trấn San Ramon đã bị ép phải thực hiện buổi lễ trừ tà cho một phụ nữ đang mang thai. Tưởng chừng buổi trục quỷ đã hoàn tất, Ofelia bàng hoàng nhận ra hiện thân quỷ dữ chưa từng biến mất.', NULL, 0, NULL, '1', 40405, NULL),
+(48, 'Bá Chủ Bầu Trời', 'Trong Thế chiến II, các phi công mạo hiểm mạng sống gia nhập Nhóm Ném Bom 100, tình anh em được hun đúc bởi lòng dũng cảm, sự mất mát và chiến thắng.', 1, 'ba-chu-bau-troi', 3, 'phimbo', 4, 9, 'ba-chu-bau-troi-thumb7539.avif', 0, 0, 'Masters of the Air', 0, '2024-02-19 16:06:52', '2024-02-29 15:53:17', '2009', '45 phút/tập', 'Bá Chủ Bầu Trời,ba-chu-bau-troi', 2, 0, 'https://www.youtube.com/watch?v=lA-1JCRguZ0', '9', 34350, NULL),
+(49, 'Metallic Rouge', 'In this universe, people and artificial humans coexist.\r\nOne day, Rouge, the android girl, and her partner Naomi were assigned to a mission to Mars.\r\nThe mission\'s objective is to \"kill 9 androids who are hostile to the government.\"\r\nSo begins the war saga of the robotic female Rouge.', 1, 'metallic-rouge', 3, 'phimle', 2, 4, 'metallic-rouge-thumb (1)7864.jpg', 0, 5, 'メタリックルージュ', 0, '2024-02-29 15:50:14', '2024-02-29 15:56:52', '2017', '23phút/tập', 'Metallic Rouge,metallic-rouge', 1, 0, NULL, '? tập', 66485, NULL);
 
 -- --------------------------------------------------------
 
@@ -324,7 +338,16 @@ INSERT INTO `movie_category` (`id`, `movie_id`, `category_id`) VALUES
 (18, 37, 2),
 (19, 38, 1),
 (20, 39, 1),
-(21, 39, 2);
+(21, 39, 2),
+(22, 40, 1),
+(23, 42, 3),
+(24, 43, 3),
+(25, 44, 3),
+(26, 45, 3),
+(27, 46, 3),
+(28, 47, 3),
+(29, 48, 3),
+(30, 49, 3);
 
 -- --------------------------------------------------------
 
@@ -358,7 +381,9 @@ INSERT INTO `movie_genre` (`id`, `movie_id`, `genre_id`) VALUES
 (67, 35, 3),
 (68, 35, 9),
 (69, 36, 7),
-(70, 37, 2);
+(70, 37, 2),
+(81, 48, 9),
+(83, 49, 4);
 
 -- --------------------------------------------------------
 
@@ -576,7 +601,7 @@ ALTER TABLE `countries`
 -- AUTO_INCREMENT cho bảng `episodes`
 --
 ALTER TABLE `episodes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
 
 --
 -- AUTO_INCREMENT cho bảng `failed_jobs`
@@ -612,19 +637,19 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT cho bảng `movies`
 --
 ALTER TABLE `movies`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT cho bảng `movie_category`
 --
 ALTER TABLE `movie_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT cho bảng `movie_genre`
 --
 ALTER TABLE `movie_genre`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
 -- AUTO_INCREMENT cho bảng `personal_access_tokens`
