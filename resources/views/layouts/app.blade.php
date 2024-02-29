@@ -23,7 +23,14 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    <link rel="stylesheet" href="/css/app.css">
+
+    <script src=/js/app.js></script>
+   {{-- mix.sass('resources/sass/app.scss', 'public/css')
+   .js('resources/js/app.js', 'public/js'); --}}
+
+
     <title>
         Admin web phim
     </title>
