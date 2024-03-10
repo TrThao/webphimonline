@@ -20,37 +20,43 @@
                  <div class="section-bar clearfix">
                      <h1 class="section-title"><span>Tags : {{ $tag }}</span></h1>
                  </div>
-                    <div class="section-bar clearfix">
-                {{-- <div class="row"> --}}
-                    @include('pages.include.locphim')
-                {{-- </div> --}}
-            </div>
+                 <div class="section-bar clearfix">
+                     {{-- <div class="row"> --}}
+                     @include('pages.include.locphim')
+                     {{-- </div> --}}
+                 </div>
                  <div class="halim_box">
                      @foreach ($movie as $key => $mov)
                          <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-27021">
                              <div class="halim-item">
                                  <a class="halim-thumb" href="{{ route('movie', $mov->slug) }}">
-                                     <figure><img class="lazy img-responsive"
-                                             src="{{ asset('uploads/movie/' . $mov->image) }}" alt="{{ $mov->title }}"
-                                             title="{{ $mov->title }}"></figure>
+                                     <figure>@php
+                                         $image_check = substr($mov->image, 0, 5);
+                                     @endphp
+                                         @if ($image_check == 'https')
+                                             <img width="100" src="{{ $mov->image }}">
+                                         @else
+                                             <img width="100" src="{{ asset('uploads/movie/' . $mov->image) }}">
+                                         @endif
+                                     </figure>
                                      <span class="status">
-                                        @if ($mov->resolution == 0)
-                                        HD
-                                    @elseif($mov->resolution == 1)
-                                        SD
-                                    @elseif($mov->resolution == 2)
-                                        HDcam
-                                    @elseif($mov->resolution == 3)
-                                        Cam
-                                    @elseif($mov->resolution == 4)
-                                        Full HD
-                                    @else
-                                        Trailer
-                                    @endif
+                                         @if ($mov->resolution == 0)
+                                             HD
+                                         @elseif($mov->resolution == 1)
+                                             SD
+                                         @elseif($mov->resolution == 2)
+                                             HDcam
+                                         @elseif($mov->resolution == 3)
+                                             Cam
+                                         @elseif($mov->resolution == 4)
+                                             Full HD
+                                         @else
+                                             Trailer
+                                         @endif
 
 
                                      </span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>
-                                          {{ $mov->episode_count }}/{{ $mov->sotap }}
+                                         {{ $mov->episode_count }}/{{ $mov->sotap }}
                                          @if ($mov->phude == 0)
                                              Vietsub
                                              @if ($mov->season != 0)

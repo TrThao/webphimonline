@@ -21,17 +21,23 @@
                  </div>
                  <div class="section-bar clearfix">
                      {{-- <div class="row"> --}}
-                         @include('pages.include.locphim')
-                     
+                     @include('pages.include.locphim')
+
                  </div>
                  <div class="halim_box">
                      @foreach ($movie as $key => $mov)
                          <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-27021">
                              <div class="halim-item">
                                  <a class="halim-thumb" href="{{ route('movie', $mov->slug) }}">
-                                     <figure><img class="lazy img-responsive"
-                                             src="{{ asset('uploads/movie/' . $mov->image) }}" alt="VŨNG LẦY PHẦN 1"
-                                             title="{{ $mov->title }}"></figure>
+                                     <figure>@php
+                                         $image_check = substr($mov->image, 0, 5);
+                                     @endphp
+                                         @if ($image_check == 'https')
+                                             <img width="100" src="{{ $mov->image }}">
+                                         @else
+                                             <img width="100" src="{{ asset('uploads/movie/' . $mov->image) }}">
+                                         @endif
+                                     </figure>
                                      <span class="status">
                                          @if ($mov->resolution == 0)
                                              HD

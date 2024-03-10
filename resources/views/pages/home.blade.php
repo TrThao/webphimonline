@@ -7,7 +7,7 @@
                      <div class="ajax"></div>
                  </div>
              </div>
-            
+
              <div id="halim_related_movies-2xx" class="wrap-slider">
                  <div class="section-bar clearfix">
                      <h3 class="section-title"><span>Phim Hot</span></h3>
@@ -17,9 +17,18 @@
                          <article class="thumb grid-item post-38498">
                              <div class="halim-item">
                                  <a class="halim-thumb" href="{{ route('movie', $hot->slug) }}" title="{{ $hot->title }}">
-                                     <figure><img class="lazy img-responsive"
-                                             src="{{ asset('uploads/movie/' . $hot->image) }}" title=""></figure>
+                                     <figure> @php
+                                         $image_check = substr($hot->image, 0, 5);
+                                     @endphp
+                                         @if ($image_check == 'https')
+                                             <img width="100" src="{{ $hot->image }}">
+                                         @else
+                                             <img width="100" src="{{ asset('uploads/movie/' . $hot->image) }}">
+                                         @endif
+                                     </figure>
                                      <span class="status">
+
+
                                          @if ($hot->resolution == 0)
                                              HD
                                          @elseif($hot->resolution == 1)
@@ -62,7 +71,7 @@
                  </div>
 
              </div>
-          
+
              <main id="main-contents" class="col-xs-12 col-sm-12 col-md-8">
                  @foreach ($category_home as $key => $cate_home)
                      <section id="halim-advanced-widget-2">
@@ -71,18 +80,19 @@
                                  <span class="h-text">{{ $cate_home->title }}</span>
 
                              </a>
-                                 <style type="text/css">
-                                     .xemthem {
-                                         position: absolute;
-                                         right: 0;
-                                         font weight: 400;
-                                         Line height: 21px;
-                                         text-transform: uppercase;
-                                         padding: 9px 25px 5px 0 18px;}
-                                 </style>
+                             <style type="text/css">
+                                 .xemthem {
+                                     position: absolute;
+                                     right: 0;
+                                     font weight: 400;
+                                     Line height: 21px;
+                                     text-transform: uppercase;
+                                     padding: 9px 25px 5px 0 18px;
+                                 }
+                             </style>
                              <a href="{{ route('category', $cate_home->slug) }}" class="xemthem" title="Xem Thêm">
                                  <span class="h-text">Xem thêm</span>
-                             
+
 
                              </a>
                          </div>
@@ -91,9 +101,15 @@
                                  <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                                      <div class="halim-item">
                                          <a class="halim-thumb" href="{{ route('movie', $mov->slug) }}">
-                                             <figure><img class="lazy img-responsive"
-                                                     src="{{ asset('uploads/movie/' . $mov->image) }}"
-                                                     title="{{ $mov->title }}"></figure>
+                                             <figure>@php
+                                                 $image_check = substr($mov->image, 0, 5);
+                                             @endphp
+                                                 @if ($image_check == 'https')
+                                                     <img width="100" src="{{ $mov->image }}">
+                                                 @else
+                                                     <img width="100" src="{{ asset('uploads/movie/' . $mov->image) }}">
+                                                 @endif
+                                             </figure>
                                              <span class="status">
 
 
@@ -143,11 +159,11 @@
 
 
                  <div class="clearfix"></div>
-                 
+
              </main>
-         
-                 @include('pages.include.sidebar')
-           
+
+             @include('pages.include.sidebar')
+
          </div>
      </div>
  @endsection

@@ -42,8 +42,14 @@
                          <div class="movie_info col-xs-12">
 
                              <div class="movie-poster col-md-3">
-                                 <img class="movie-thumb" src="{{ asset('uploads/movie/' . $movie->image) }}"
-                                     alt="{{ $movie->title }}">
+                               @php
+                                         $image_check = substr($movie->image, 0, 5);
+                                     @endphp
+                                         @if ($image_check == 'https')
+                                             <img width="100" src="{{ $movie->image }}">
+                                         @else
+                                             <img width="100" src="{{ asset('uploads/movie/' . $movie->image) }}">
+                                         @endif
 
                                  @if ($movie->resolution != 5)
                                      @if ($episode_current_list_count > 0)

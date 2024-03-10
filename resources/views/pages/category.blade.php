@@ -29,48 +29,53 @@
                          <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-27021">
                              <div class="halim-item">
                                  <a class="halim-thumb" href="{{ route('movie', $mov->slug) }}">
-                                     <figure><img class="lazy img-responsive"
-                                             src="{{ asset('uploads/movie/' . $mov->image) }}" alt="VŨNG LẦY PHẦN 1"
-                                             title="{{ $mov->title }}"></figure>
-                                     <span class="status">
-                                         @if ($mov->resolution == 0)
-                                             HD
-                                         @elseif($mov->resolution == 1)
-                                             SD
-                                         @elseif($mov->resolution == 2)
-                                             HDcam
-                                         @elseif($mov->resolution == 3)
-                                             Cam
-                                         @elseif($mov->resolution == 4)
-                                             Full HD
+                                     <figure>@php
+                                         $image_check = substr($mov->image, 0, 5);
+                                     @endphp
+                                         @if ($image_check == 'https')
+                                             <img width="100" src="{{ $mov->image }}">
                                          @else
-                                             Trailer
+                                             <img width="100" src="{{ asset('uploads/movie/' . $mov->image) }}">
                                          @endif
+                                         <span class="status">
+                                             @if ($mov->resolution == 0)
+                                                 HD
+                                             @elseif($mov->resolution == 1)
+                                                 SD
+                                             @elseif($mov->resolution == 2)
+                                                 HDcam
+                                             @elseif($mov->resolution == 3)
+                                                 Cam
+                                             @elseif($mov->resolution == 4)
+                                                 Full HD
+                                             @else
+                                                 Trailer
+                                             @endif
 
 
-                                     </span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>
-                                         {{ $mov->episode_count }}/{{ $mov->sotap }}
-                                         @if ($mov->phude == 0)
-                                             Vietsub
-                                             {{-- @if ($mov->season != 0)
+                                         </span><span class="episode"><i class="fa fa-play" aria-hidden="true"></i>
+                                             {{ $mov->episode_count }}/{{ $mov->sotap }}
+                                             @if ($mov->phude == 0)
+                                                 Vietsub
+                                                 {{-- @if ($mov->season != 0)
                                                  -Season.{{ $mov->season }}
                                              @endif --}}
-                                         @else
-                                             Thuyết Minh
-                                             {{-- @if ($mov->season != 0)
+                                             @else
+                                                 Thuyết Minh
+                                                 {{-- @if ($mov->season != 0)
                                                  -Season.{{ $mov->season }}
                                              @endif --}}
-                                         @endif
+                                             @endif
 
 
-                                     </span>
-                                     <div class="icon_overlay"></div>
-                                     <div class="halim-post-title-box">
-                                         <div class="halim-post-title ">
-                                             <p class="entry-title">{{ $mov->title }}</p>
-                                             <p class="original_title">{{ $mov->name_eng }}</p>
+                                         </span>
+                                         <div class="icon_overlay"></div>
+                                         <div class="halim-post-title-box">
+                                             <div class="halim-post-title ">
+                                                 <p class="entry-title">{{ $mov->title }}</p>
+                                                 <p class="original_title">{{ $mov->name_eng }}</p>
+                                             </div>
                                          </div>
-                                     </div>
                                  </a>
                              </div>
                          </article>
@@ -89,7 +94,7 @@
                      </div>
              </section>
          </main>
-   
+
          @include('pages.include.sidebar')
 
      </div>
