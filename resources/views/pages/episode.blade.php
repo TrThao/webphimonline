@@ -224,7 +224,7 @@
                                  autoplayTimeout: 4000,
                                  autoplayHoverPause: true,
                                  nav: true,
-                                 navText: ['<i class="hl-down-open rotate-left"></i>',
+                                 navText: ['<i class="fa-solid fa-angle-left"></i>',
                                      '<i class="hl-down-open rotate-right"></i>'
                                  ],
                                  responsiveClass: true,

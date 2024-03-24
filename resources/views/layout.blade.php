@@ -11,6 +11,7 @@
     <meta name="DC.language" scheme="utf-8" content="vi" />
     <meta name="language" content="Việt Nam">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
 
     <link rel="shortcut icon" href="{{ asset('uploads/logo/' . $info->logo) }}" type="image/x-icon" />
     <meta name="revisit-after" content="1 days" />
@@ -96,7 +97,7 @@
                                         <div class="input-group">
                                             <input id="timkiem" type="text" name="search" class="form-control"
                                                 placeholder="Tìm kiếm phim..." autocomplete="off">
-                                            <button class="btn btn-primary" type="submit"> 
+                                            <button class="btn btn-primary" type="submit">
                                                 <i class="fa fa-search" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -112,8 +113,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 hidden-xs">
-                    <div id="get-bookmark" class="box-shadow"><i class="hl-bookmark"></i><span> Bookmarks</span><span
-                            class="count">0</span></div>
+                    <div id="get-bookmark" class="box-shadow"><i class="fa-solid fa-bookmark"></i><span>
+                            Bookmarks</span><span class="count">0</span>
+                    </div>
                     <div id="bookmark-list" class="hidden bookmark-list-on-pc">
                         <ul style="margin: 0;"></ul>
                     </div>
@@ -140,10 +142,10 @@
                         Bookmarks<i class="hl-bookmark" aria-hidden="true"></i>
                         <span class="count">0</span>
                     </button>
-                    <button type="button" class="navbar-toggle collapsed pull-right get-locphim-on-mobile">
+                    {{-- <button type="button" class="navbar-toggle collapsed pull-right get-locphim-on-mobile">
                         <a href="javascript:;" id="expand-ajax-filter" style="color: #ffed4d;">Lọc <i
                                 class="fas fa-filter"></i></a>
-                    </button>
+                    </button> --}}
                 </div>
                 <div class="collapse navbar-collapse" id="halim">
                     <div class="menu-menu_1-container">
@@ -313,6 +315,7 @@
         });
     </script>
 
+    {{-- tìm kiếm phim --}}
     <script type="text/javascript">
         $(document).ready(function() {
 
@@ -602,8 +605,8 @@
                 autoplayTimeout: 4000,
                 autoplayHoverPause: true,
                 nav: true,
-                navText: ['<i class="hl-down-open rotate-left"></i>',
-                    '<i class="hl-down-open rotate-right"></i>'
+                navText: ['<i class="fa-solid fa-angle-left"></i>',
+                    '<i class="fa-solid fa-angle-right"></i>'
                 ],
                 responsiveClass: true,
                 responsive: {
