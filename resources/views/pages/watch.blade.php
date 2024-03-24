@@ -90,31 +90,31 @@
                          <ul class="nav nav-tabs" role="tablist">
                              @if ($movie->resolution == 0)
                                  <li role="presentation" class="active server-1"><a href="#server-0"
-                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="hl-server"></i>
+                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="fa-solid fa-server"></i>
                                          HD</a></li>
                              @elseif($movie->resolution == 1)
                                  <li role="presentation" class="active server-1"><a href="#server-0"
-                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="hl-server"></i>
+                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="fa-solid fa-server"></i>
                                          SD</a></li>
                              @elseif($movie->resolution == 2)
                                  <li role="presentation" class="active server-1"><a href="#server-0"
-                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="hl-server"></i>
+                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="fa-solid fa-server"></i>
                                          HDcam</a></li>
                              @elseif($movie->resolution == 3)
                                  <li role="presentation" class="active server-1"><a href="#server-0"
-                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="hl-server"></i>
+                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="fa-solid fa-server"></i>
                                          Cam</a></li>
                              @elseif($movie->resolution == 4)
                                  <li role="presentation" class="active server-1"><a href="#server-0"
-                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="hl-server"></i>
+                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="fa-solid fa-server"></i>
                                          Full HD</a></li>
                              @else
                                  <li role="presentation" class="active server-1"><a href="#server-0"
-                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="hl-server"></i>
+                                         aria-controls="server-0" role="tab" data-toggle="tab"><i class="fa-solid fa-server"></i>
                                          Trailer</a></li>
                              @endif
                              {{-- <li role="presentation" class="active server-1"><a href="#server-0" aria-controls="server-0"
-                                     role="tab" data-toggle="tab"><i class="hl-server"></i> Vietsub</a></li> --}}
+                                     role="tab" data-toggle="tab"><i class="fa-solid fa-server"></i> Vietsub</a></li> --}}
                          </ul>
                          <div class="tab-content">
                              <div role="tabpanel" class="tab-pane active server-1" id="server-0">
